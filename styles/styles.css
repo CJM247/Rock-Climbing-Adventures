@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #2E8B57;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* Navigation Links Styling */
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px; /* Increased padding for better touch targets */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    border-radius: 5px; /* Rounded corners for all links */
+}
+
+/* Hover State */
+nav ul li a:hover {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Sea Green */
+    transform: scale(1.05); /* Subtle zoom effect on hover */
+}
+
+/* Active State */
+nav ul li a.active {
+    background-color: #FFD700; /* Gold */
+    color: #2E8B57; /* Sea Green */
+}
+
+/* Main Content Styling */
+main {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro, .content {
+    max-width: 800px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro img, .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2E8B57; /* Sea Green */
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2E8B57; /* Sea Green */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+}
+
+/* Responsive Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+/* Additional Hover Effects for Images */
+.responsive-img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Focus State for Accessibility */
+nav ul li a:focus {
+    outline: 2px dashed #FFD700;
+    outline-offset: 4px;
+}
